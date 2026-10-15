@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soru Çöz · Ders Asistanı</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="ust">
+    <div class="kap">
+      <a class="logo" href="index.html">Ders Asistanı</a>
+      <nav>
+        <a href="konular.html">Konular</a>
+        <a href="soru.html">Soru Çöz</a>
+        <a href="gizlilik.html">Gizlilik</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="kap">
+      <h1>Soru çöz</h1>
+      <p class="soluk">Sorunun fotoğrafını çek ya da yükle, adım adım çözümünü gör.</p>
+
+      <form id="soru-form" class="kart" novalidate>
+        <label for="ders">Ders</label>
+        <select id="ders">
+          <option value="matematik">Matematik</option>
+          <option value="fizik">Fizik</option>
+        </select>
+
+        <label for="dosya">Soru fotoğrafı</label>
+        <input id="dosya" type="file" accept="image/jpeg,image/png,image/webp" capture="environment">
+        <img id="onizleme" class="onizleme" alt="Yüklenen soru fotoğrafının önizlemesi" hidden>
+
+        <label for="not">Hangi konuda takıldın? <span class="soluk">(isteğe bağlı)</span></label>
+        <textarea id="not" maxlength="300" placeholder="Örn: Parantez açmayı anlamıyorum"></textarea>
+
+        <div id="hata" class="hata-kutu" role="alert"></div>
+        <button id="gonder" class="buton" type="submit">Soruyu Çöz</button>
+      </form>
+
+      <section class="kart">
+        <h2>Daha iyi sonuç için ipuçları</h2>
+        <ul>
+          <li>Tek bir soruyu fotoğrafla.</li>
+          <li>Işığın iyi olduğundan ve yazının net okunduğundan emin ol.</li>
+          <li>Fotoğrafı yukarıdan, düz bir açıyla çek.</li>
+        </ul>
+        <p class="soluk">En fazla 5 MB. Sunucumuz fotoğrafı kaydetmez; ayrıntılar için <a href="gizlilik.html">gizlilik</a> sayfasına bak.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="kap">Ders Asistanı · <a href="gizlilik.html">Gizlilik</a></div>
+  </footer>
+  <script src="js/ortak.js"></script>
+  <script src="js/soru.js"></script>
+</body>
+</html>

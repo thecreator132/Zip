@@ -1,0 +1,12 @@
+{
+  "name": "ders-asistani",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Konu anlatımı ve fotoğrafla soru çözme sitesi",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

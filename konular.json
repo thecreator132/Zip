@@ -1,0 +1,51 @@
+{
+  "dersler": [
+    { "id": "matematik", "ad": "Matematik" },
+    { "id": "fizik", "ad": "Fizik" }
+  ],
+  "konular": [
+    {
+      "id": "birinci-derece-denklemler",
+      "ders": "matematik",
+      "baslik": "Birinci Dereceden Denklemler",
+      "durum": "hazir",
+      "tanim": "Bilinmeyen bir değeri bulmak için eşitliğin iki tarafına aynı işlemi uygulayarak ilerlediğimiz denklemlere birinci dereceden denklem denir. Bu denklemlerde bilinmeyenin (genellikle x) üssü 1'dir.",
+      "ornek": {
+        "soru": "3x + 5 = 20",
+        "adimlar": [
+          "Sabit sayıyı (5) eşitliğin diğer tarafına geçiriyoruz. Toplamanın tersi çıkarmadır: 3x = 20 − 5, yani 3x = 15.",
+          "x'in katsayısına (3) bölüyoruz. Çarpmanın tersi bölmedir: x = 15 / 3, yani x = 5."
+        ],
+        "kontrol": "3 · 5 + 5 = 20 ✓"
+      },
+      "aklindaTut": [
+        "Eşitliğin bir tarafına yaptığın işlemi, diğer tarafa da aynen yapmalısın.",
+        "İşlemin tersini uygula: toplama ile çıkarma, çarpma ile bölme birbirinin tersidir.",
+        "Sonucu yerine koyarak her zaman kontrol et."
+      ],
+      "miniTest": {
+        "soru": "2x − 4 = 10 denkleminin çözümü nedir?",
+        "cevap": "x = 7 (önce 4 ekle: 2x = 14, sonra 2'ye böl)"
+      },
+      "ilgili": ["esitsizlikler", "oran-oranti"]
+    },
+    {
+      "id": "esitsizlikler",
+      "ders": "matematik",
+      "baslik": "Eşitsizlikler",
+      "durum": "yakinda"
+    },
+    {
+      "id": "oran-oranti",
+      "ders": "matematik",
+      "baslik": "Oran ve Orantı",
+      "durum": "yakinda"
+    },
+    {
+      "id": "dogrusal-hareket",
+      "ders": "fizik",
+      "baslik": "Doğrusal Hareket",
+      "durum": "yakinda"
+    }
+  ]
+}
